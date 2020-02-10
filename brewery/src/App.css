@@ -3,7 +3,11 @@
 .App {
   text-align: center;
   /* background-color: rgb(77, 53, 53); */
-  background-color: rgb(212, 214, 214);
+  background-image: url('https://images.pexels.com/photos/3626602/pexels-photo-3626602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #050d10;
 }
 
@@ -42,6 +46,11 @@
   }
 }
 
+h1{
+  color: white;
+  font-size: 6vw;
+}
+
 p{
   font-family: 'Roboto', sans-serif;
 }
@@ -59,4 +68,93 @@ p{
 .router_link:visited{
   color: black;
   mix-blend-mode: screen;
+}
+
+h2{
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3vw;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 2vw;
+  text-align: center;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+
+.brewWrapper{
+  margin: 2%;
+  min-width: 300px;
+  min-height: 350px;
+  max-height: 35vh;
+  /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* mix-blend-mode: luminosity; */
+  box-shadow: 3px 6px 3px 1px #000000ad;
+  border: 1px solid #a76969a3;        
+}
+
+.brewWrapper:hover{
+  mix-blend-mode: normal;
+  border-radius: 0;
+}
+
+.brewItems{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20vw;
+  min-width: 300px;
+  min-height: 350px;
+  max-height: 35vh;
+  color: black;
+  mix-blend-mode: screen;
+  background-color: white;
+  border-radius: 50px;
+}
+
+input{
+  border-radius: 50px;
+    height: 5vh;
+    width: 25vw;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 2vw;
+    padding: 1%;
+}
+
+form{
+  margin: 5%;
+}
+
+.brewItems i{
+  font-size: 5vw;
+  /* color: white; */
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 8vw;
+  /* height: 100px; */
+  text-align: center;
+  padding: 5% 0;
+  margin: 1% auto;
 }

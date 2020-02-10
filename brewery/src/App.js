@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
-import axios from 'axios'
 import {connect} from 'react-redux';
 import {callItem} from './actions/action';
-import styled from 'styled-components';
 
 import BrewList from './Components/list';
 import Header from './Components/Header';
@@ -13,15 +10,37 @@ import './App.css';
 
 function App(props) {
 
+  const [search, setSearch] = useState('dog')
+
   useEffect(() => {
-    props.callItem()
-    }, [])
+    props.callItem(search)
+    }, [search])
+
   
+    const handleData = e => {
+      e.preventDefault()
+      props.callItem(search);
+    }
+
+  const handleChanges = (e) => {
+      setSearch(e.target.value)
+
+  }
+  
+  console.log('search', search)
 
   return (
     <div className="App">
       <Route exact path='/' component={Header} />
-      <h1>TRENDING</h1>
+      <h1>SEARCH</h1>
+      <form onSubmit={handleData}>
+        <input
+          type='text'
+          placeholder='Search'
+          value={search}
+          onChange={handleChanges} 
+        />
+      </form>
       <BrewList breweries={props.breweries}/>
     </div>
   );

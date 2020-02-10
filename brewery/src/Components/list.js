@@ -10,15 +10,14 @@ const BrewList = (props) => {
     justify-content: center;
     flex-flow: row wrap;
     height: auto;
-    width: 95vw;
+    width: 99vw;
     margin: 0 auto;
-
   `;
 
 return (
     <ListWrapper>
         {props.breweries.map(list => (
-        <Brewery list={list} />
+        <Brewery key={list.id} list={list} />
         ))}
     </ListWrapper>
 )

@@ -17,8 +17,9 @@ const Nav = () => {
 
     return(
         <Wrapper>
-            <Link className='router_link' to='/'>Home</Link>
-            <Link className='router_link' to='/about'>About Us</Link>
+            <Link className='router_link' to='/'>Home</Link> 
+            <p>/</p>
+            {/* <Link className='router_link' to='/about'>About Us</Link> */}
             <Link className='router_link' to='/search'>Search</Link>
         </Wrapper>
     )
