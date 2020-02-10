@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
 
 .App {
   text-align: center;
   /* background-color: rgb(77, 53, 53); */
-  background-image: url('https://images.pexels.com/photos/3626602/pexels-photo-3626602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url("https://images.pexels.com/photos/3626602/pexels-photo-3626602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,16 +46,16 @@
   }
 }
 
-h1{
+h1 {
   color: white;
   font-size: 6vw;
 }
 
-p{
-  font-family: 'Roboto', sans-serif;
+p {
+  font-family: "Roboto", sans-serif;
 }
 
-.router_link{
+.router_link {
   font-size: 3vw;
   padding: 0 2%;
 }
@@ -65,14 +65,14 @@ p{
   mix-blend-mode: screen;
 }
 
-.router_link:visited{
+.router_link:visited {
   color: black;
   mix-blend-mode: screen;
 }
 
-h2{
+h2 {
   color: black;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 3vw;
   margin: 0;
 }
@@ -81,7 +81,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-ul li{
+ul li {
   color: black;
   text-decoration: none;
   list-style-type: none;
@@ -89,11 +89,11 @@ ul li{
   text-align: center;
   margin: 0 auto;
 }
-a{
+a {
   text-decoration: none;
 }
 
-.brewWrapper{
+.brewWrapper {
   margin: 2%;
   min-width: 300px;
   min-height: 350px;
@@ -108,15 +108,15 @@ a{
   align-items: center;
   /* mix-blend-mode: luminosity; */
   box-shadow: 3px 6px 3px 1px #000000ad;
-  border: 1px solid #a76969a3;        
+  border: 1px solid #a76969a3;
 }
 
-.brewWrapper:hover{
+.brewWrapper:hover {
   mix-blend-mode: normal;
   border-radius: 0;
 }
 
-.brewItems{
+.brewItems {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -132,22 +132,22 @@ a{
   border-radius: 50px;
 }
 
-input{
+input {
   border-radius: 50px;
-    height: 5vh;
-    width: 25vw;
-    background-color: transparent;
-    color: white;
-    font-weight: 700;
-    font-size: 2vw;
-    padding: 1%;
+  height: 5vh;
+  width: 25vw;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 2vw;
+  padding: 1%;
 }
 
-form{
+form {
   margin: 5%;
 }
 
-.brewItems i{
+.brewItems i {
   font-size: 5vw;
   /* color: white; */
   border: 1px solid black;
@@ -157,4 +157,29 @@ form{
   text-align: center;
   padding: 5% 0;
   margin: 1% auto;
+}
+
+.loading i {
+  color: black;
+  font-size: 10vw;
+  animation-name: loading;
+  animation-timing-function: linear;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  margin: 5%;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+    color: purple;
+  }
+  50% {
+    transform: rotate(180deg);
+    color: pink;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: yellow;
+  }
 }
