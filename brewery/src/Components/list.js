@@ -14,10 +14,14 @@ const BrewList = (props) => {
     margin: 0 auto;
   `;
 
+
 return (
     <ListWrapper>
         {props.breweries.map(list => (
-        <Brewery key={list.id} list={list} />
+            list.state === props.states ?  
+            <Brewery key={list.id} list={list} /> :
+            props.search === '' ? <Brewery key={list.id} list={list} /> : null
+            
         ))}
     </ListWrapper>
 )

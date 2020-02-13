@@ -8,7 +8,7 @@ export const callItem = (search) => dispatch => {
     console.log(search)
     dispatch({type: CALL_ITEM});
     axios
-        .get(`https://api.openbrewerydb.org/breweries/search?query=${search}`)
+        .get(`https://api.openbrewerydb.org/breweries/${search}`)
         .then(res => 
              dispatch({type: CALL_ITEM_SUCCESS, payload: res.data})
         )
