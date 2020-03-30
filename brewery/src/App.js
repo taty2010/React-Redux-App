@@ -10,10 +10,7 @@ import { Route } from "react-router-dom";
 import "./App.css";
 
 function App(props) {
-  const [url, setUrl] = useState('search?query=')
-  const [search, setSearch] = useState('');
-  const [USStates, setUSStates] = useState('')
-  let searchItems = `${url}${search}`;
+  const [search, setSearch] = useState("texas");
 
   useEffect(() => {
     if(search === ''){
