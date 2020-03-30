@@ -9,7 +9,7 @@ import { Route } from "react-router-dom";
 import "./App.css";
 
 function App(props) {
-  const [search, setSearch] = useState("dog");
+  const [search, setSearch] = useState("texas");
 
   useEffect(() => {
     props.callItem(search);
