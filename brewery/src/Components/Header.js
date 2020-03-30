@@ -22,7 +22,7 @@ const Header = () => {
     width: 100%;
     color: black;
     mix-blend-mode: screen;
-    background-color: rgb(212, 212, 212);
+    background-color: white;
     font-size: 18vw;
     line-height: 24vh;
     margin: 0 auto;
